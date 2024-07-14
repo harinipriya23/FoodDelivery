@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  scrollbar-color: red;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+body {
+  @apply font-montserrat bg-gradient-to-b from-slate-950 from-30%  via-slate-950 to-slate-950;
+}
+.shadow {
+  box-shadow: black 1px 1px 10px 3px;
+}
+.xl-shadow {
+  box-shadow: 0px 0px 5px 1px ;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.box::-webkit-scrollbar{
+  display: none;
+ }
+ .activee {
+  box-shadow: 0px 0px 10px 2px white;
+  padding: 2px;
+ }
+.animate{
+  animation: fadeIn 4s;
+}
+.ani{
+  animation: fadeIn 2s;
+}
